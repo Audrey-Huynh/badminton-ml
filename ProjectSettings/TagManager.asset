@@ -6,6 +6,8 @@ TagManager:
   tags:
   - bird
   - walkableSurface
+  - purpleGoal
+  - blueGoal
   layers:
   - Default
   - TransparentFX
