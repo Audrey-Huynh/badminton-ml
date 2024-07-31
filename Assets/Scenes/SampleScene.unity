@@ -156,9 +156,9 @@ MonoBehaviour:
   agentJumpVelocity: 777
   agentJumpVelocityMaxChange: 10
   speedReductionFactor: 0.75
-  blueGoalMaterial: {fileID: 0}
-  purpleGoalMaterial: {fileID: 0}
-  defaultMaterial: {fileID: 0}
+  blueGoalMaterial: {fileID: 2100000, guid: 68a9dcb64ec2fe84ab4278e8948c19b3, type: 2}
+  purpleGoalMaterial: {fileID: 2100000, guid: 68a9dcb64ec2fe84ab4278e8948c19b3, type: 2}
+  defaultMaterial: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   fallingForce: 150
 --- !u!4 &99604441
 Transform:
@@ -175,22 +175,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &163090798
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2116893181}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: -0.5, y: -0.5, z: 5.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1388176817}
-  m_Father: {fileID: 1030397698}
-  m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
 --- !u!1 &204836380
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,7 +209,7 @@ Transform:
   - {fileID: 1868644725}
   - {fileID: 1696649772}
   - {fileID: 1030397698}
-  - {fileID: 4813318625378201033}
+  - {fileID: 5385289184636132497}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &262735601
@@ -457,7 +441,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1518863248}
-  - {fileID: 2679305327641160181}
+  - {fileID: 3269325039661602989}
   m_Father: {fileID: 204836381}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &877437406
@@ -473,7 +457,7 @@ GameObject:
   - component: {fileID: 877437409}
   - component: {fileID: 877437408}
   m_Layer: 0
-  m_Name: BlueGround
+  m_Name: BlueGoal
   m_TagString: blueGoal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -792,7 +776,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 877437407}
-  - {fileID: 163090798}
+  - {fileID: 1388176817}
   m_Father: {fileID: 204836381}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1388176816
@@ -808,7 +792,7 @@ GameObject:
   - component: {fileID: 1388176819}
   - component: {fileID: 1388176818}
   m_Layer: 0
-  m_Name: default
+  m_Name: blueAgent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -822,12 +806,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1388176816}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: -0.5, y: -0.5, z: 5.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 163090798}
+  m_Father: {fileID: 1030397698}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1388176818
 MeshCollider:
@@ -914,7 +898,7 @@ GameObject:
   - component: {fileID: 1518863250}
   - component: {fileID: 1518863249}
   m_Layer: 0
-  m_Name: PurpleGround
+  m_Name: PurpleGoal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1461,22 +1445,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905487369}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &2116893181
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 163090798}
-  m_Layer: 0
-  m_Name: blueAgent
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!33 &399085960651071975
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1507,22 +1475,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2432090755550338912, guid: af56e357132ac634a8a6ec97fceb23da, type: 3}
---- !u!4 &2679305327641160181
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3343110542329688911}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 3269325039661602989}
-  m_Father: {fileID: 751911045}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!64 &3247471387394000486
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1553,29 +1505,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6046318564729670550}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2679305327641160181}
+  m_Father: {fileID: 751911045}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &3343110542329688911
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2679305327641160181}
-  m_Layer: 0
-  m_Name: purpleAgent
-  m_TagString: purpleGoal
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &3749893775919632298
 GameObject:
   m_ObjectHideFlags: 0
@@ -1589,9 +1525,10 @@ GameObject:
   - component: {fileID: 6003006410118152527}
   - component: {fileID: 3247471387394000486}
   - component: {fileID: 4720260328881494102}
+  - component: {fileID: 7091846319540495836}
   m_Layer: 0
-  m_Name: default
-  m_TagString: Untagged
+  m_Name: birdie
+  m_TagString: birdie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1665,38 +1602,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!4 &4813318625378201033
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5298352355337582451}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 10.6, z: -3.77}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5385289184636132497}
-  m_Father: {fileID: 204836381}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &5298352355337582451
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4813318625378201033}
-  m_Layer: 0
-  m_Name: birdie
-  m_TagString: bird
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!4 &5385289184636132497
 Transform:
   m_ObjectHideFlags: 0
@@ -1705,12 +1610,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3749893775919632298}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 10.6, z: -3.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4813318625378201033}
+  m_Father: {fileID: 204836381}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &6003006410118152527
 MeshRenderer:
@@ -1767,7 +1672,7 @@ GameObject:
   - component: {fileID: 3795528089166988659}
   - component: {fileID: 563352438428012371}
   m_Layer: 0
-  m_Name: default
+  m_Name: purpleAgent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1781,6 +1686,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3749893775919632298}
   m_Mesh: {fileID: -2432090755550338912, guid: aae3a05c8e52b6d40811b4f31e9be52a, type: 3}
+--- !u!114 &7091846319540495836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3749893775919632298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b7a8d3f3b6aff344a0481c12600f2a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  envController: {fileID: 0}
+  PurpleGoal: {fileID: 0}
+  BlueGoal: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
