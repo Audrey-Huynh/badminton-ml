@@ -8,6 +8,11 @@ TagManager:
   - purpleGoal
   - blueGoal
   - birdie
+  - blueBoundary
+  - purpleBoundary
+  - boundary
+  - purpleAgent
+  - blueAgent
   layers:
   - Default
   - TransparentFX
