@@ -184,6 +184,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 204836381}
+  - component: {fileID: 204836382}
   m_Layer: 0
   m_Name: TrainingArea
   m_TagString: Untagged
@@ -212,6 +213,27 @@ Transform:
   - {fileID: 1696649772}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &204836382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204836380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 844d7b76ad1dea74bafcce60ceb16da3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blueAgent: {fileID: 1388176821}
+  purpleAgent: {fileID: 6046318564729670551}
+  AgentsList:
+  - {fileID: 1388176821}
+  - {fileID: 6046318564729670551}
+  birdie: {fileID: 3749893775919632298}
+  BlueGoal: {fileID: 1518863247}
+  PurpleGoal: {fileID: 877437406}
+  MaxEnvironmentSteps: 0
 --- !u!1 &262735601
 GameObject:
   m_ObjectHideFlags: 0
@@ -1005,6 +1027,7 @@ GameObject:
   - component: {fileID: 1388176818}
   - component: {fileID: 1388176822}
   - component: {fileID: 1388176821}
+  - component: {fileID: 1388176823}
   m_Layer: 0
   m_Name: blueAgent
   m_TagString: Untagged
@@ -1021,7 +1044,7 @@ Transform:
   m_GameObject: {fileID: 1388176816}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: -0.5, y: -0.5, z: 5.5}
+  m_LocalPosition: {x: -0.5, y: 0, z: 5.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1046,7 +1069,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2432090755550338912, guid: 5e3b0b7889414d945ac55773ef39d2bf, type: 3}
 --- !u!23 &1388176819
@@ -1115,13 +1138,13 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
-  area: {fileID: 1030397697}
+  area: {fileID: 204836380}
   teamId: 0
   birdie: {fileID: 3749893775919632298}
   hitGroundColliders:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1589729368}
+  - {fileID: 877437408}
+  - {fileID: 1518863249}
 --- !u!114 &1388176822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1152,6 +1175,33 @@ MonoBehaviour:
   m_UseChildSensors: 1
   m_UseChildActuators: 1
   m_ObservableAttributeHandling: 0
+--- !u!54 &1388176823
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388176816}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
 --- !u!1 &1518863247
 GameObject:
   m_ObjectHideFlags: 0
@@ -1845,7 +1895,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2432090755550338912, guid: af56e357132ac634a8a6ec97fceb23da, type: 3}
 --- !u!64 &3247471387394000486
@@ -1899,7 +1949,6 @@ GameObject:
   - component: {fileID: 3247471387394000486}
   - component: {fileID: 4720260328881494102}
   - component: {fileID: 7091846319540495836}
-  - component: {fileID: 7091846319540495837}
   m_Layer: 0
   m_Name: birdie
   m_TagString: birdie
@@ -1985,7 +2034,7 @@ Transform:
   m_GameObject: {fileID: 3749893775919632298}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 8.48, z: -3.77}
+  m_LocalPosition: {x: 0, y: 8, z: -3.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2047,6 +2096,7 @@ GameObject:
   - component: {fileID: 563352438428012371}
   - component: {fileID: 6046318564729670552}
   - component: {fileID: 6046318564729670551}
+  - component: {fileID: 6046318564729670553}
   m_Layer: 0
   m_Name: purpleAgent
   m_TagString: Untagged
@@ -2070,13 +2120,13 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
-  area: {fileID: 751911044}
+  area: {fileID: 204836380}
   teamId: 1
   birdie: {fileID: 3749893775919632298}
   hitGroundColliders:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1589729368}
+  - {fileID: 877437408}
+  - {fileID: 1518863249}
 --- !u!114 &6046318564729670552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2107,6 +2157,33 @@ MonoBehaviour:
   m_UseChildSensors: 1
   m_UseChildActuators: 1
   m_ObservableAttributeHandling: 0
+--- !u!54 &6046318564729670553
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6046318564729670550}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
 --- !u!33 &7091846319540495835
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2130,25 +2207,6 @@ MonoBehaviour:
   envController: {fileID: 0}
   PurpleGoal: {fileID: 877437406}
   BlueGoal: {fileID: 1518863247}
---- !u!114 &7091846319540495837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3749893775919632298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 844d7b76ad1dea74bafcce60ceb16da3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blueAgent: {fileID: 1388176821}
-  purpleAgent: {fileID: 6046318564729670551}
-  AgentsList: []
-  birdie: {fileID: 3749893775919632298}
-  BlueGoal: {fileID: 1518863247}
-  PurpleGoal: {fileID: 877437406}
-  MaxEnvironmentSteps: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -190,9 +190,17 @@ public class BirdieEnvController : MonoBehaviour
 
         foreach (var agent in AgentsList)
         {
+            if (agent == blueAgent)
+            {
+                var randomPosZ = Random.Range(2f, 4f);
+            }
+            else if (agent == purpleAgent)
+            {
+                var randomPosZ = Random.Range(-4f, -2f);
+            }
+
             // randomise starting positions and rotations
             var randomPosX = Random.Range(-2f, 2f);
-            var randomPosZ = Random.Range(-2f, 2f);
             var randomPosY = Random.Range(0.5f, 3.75f); // depends on jump height
             var randomRot = Random.Range(-45f, 45f);
 
@@ -212,7 +220,7 @@ public class BirdieEnvController : MonoBehaviour
     void ResetBirdie()
     {
         var randomPosX = Random.Range(-2f, 2f);
-        var randomPosZ = Random.Range(6f, 10f);
+        var randomPosZ = Random.Range(6f, 8f);
         var randomPosY = Random.Range(6f, 8f);
 
         // alternate birdie spawn side
