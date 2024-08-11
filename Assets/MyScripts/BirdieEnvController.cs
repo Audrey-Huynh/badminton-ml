@@ -190,13 +190,14 @@ public class BirdieEnvController : MonoBehaviour
 
         foreach (var agent in AgentsList)
         {
-            if (agent == blueAgent)
+            var randomPosZ = 0f;
+            if (agent == AgentsList[0])
             {
-                var randomPosZ = Random.Range(2f, 4f);
+                randomPosZ = Random.Range(2f, 4f);
             }
-            else if (agent == purpleAgent)
+            else if (agent == AgentsList[1])
             {
-                var randomPosZ = Random.Range(-4f, -2f);
+                randomPosZ = Random.Range(-4f, -2f);
             }
 
             // randomise starting positions and rotations
