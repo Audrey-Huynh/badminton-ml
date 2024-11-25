@@ -193,6 +193,26 @@ public class BadmintonAgent : Agent
 
     public override void CollectObservations(VectorSensor sensor)
     {
+        // Agent rotation (1 float)
+        sensor.AddObservation(this.transform.rotation.y);
+
+        // Vector from agent to ball (direction to birdie) (3 floats)
+        Vector3 toBirdie = new Vector3((birdieRb.transform.position.x - this.transform.position.x) * agentRot,
+        (birdieRb.transform.position.y - this.transform.position.y),
+        (birdieRb.transform.position.z - this.transform.position.z) * agentRot);
+
+        sensor.AddObservation(toBirdie.normalized);
+
+        // Distance from the birdie (1 float)
+        sensor.AddObservation(toBirdie.magnitude);
+
+        // Agent velocity (3 floats)
+        sensor.AddObservation(agentRb.velocity);
+
+        // Ball velocity (3 floats)
+        sensor.AddObservation(birdieRb.velocity.y);
+        sensor.AddObservation(birdieRb.velocity.z * agentRot);
+        sensor.AddObservation(birdieRb.velocity.x * agentRot);
     }
 
     // For human controller
