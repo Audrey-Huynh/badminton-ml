@@ -203,7 +203,7 @@ public class BirdieEnvController : MonoBehaviour
             // randomise starting positions and rotations
             var randomPosX = Random.Range(-2f, 2f);
             var randomPosY = Random.Range(0.5f, 3.75f); // depends on jump height
-            var randomRot = Random.Range(-45f, 45f);
+            var randomRot = Random.Range(-30f, 30f);
 
             agent.transform.localPosition = new Vector3(randomPosX, randomPosY, randomPosZ);
             agent.transform.eulerAngles = new Vector3(0, randomRot, 0);
@@ -220,9 +220,9 @@ public class BirdieEnvController : MonoBehaviour
     /// </summary>
     void ResetBirdie()
     {
-        var randomPosX = Random.Range(-2f, 2f);
-        var randomPosZ = Random.Range(6f, 8f);
-        var randomPosY = Random.Range(6f, 8f);
+        var randomPosX = Random.Range(-1f, 1f);
+        var randomPosZ = Random.Range(2f, 3f);
+        var randomPosY = Random.Range(7f, 8f);
 
         // alternate birdie spawn side
         // -1 = spawn blue side, 1 = spawn purple side
