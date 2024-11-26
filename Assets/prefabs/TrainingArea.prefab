@@ -599,6 +599,7 @@ GameObject:
   - component: {fileID: 21532319986508010}
   - component: {fileID: 6862218952510003095}
   - component: {fileID: 8690877726333069303}
+  - component: {fileID: 1537015246517338725}
   m_Layer: 0
   m_Name: blueAgent
   m_TagString: Untagged
@@ -773,6 +774,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &1537015246517338725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3069606932698514303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DecisionPeriod: 5
+  TakeActionsBetweenDecisions: 1
 --- !u!1 &3582500014354528711
 GameObject:
   m_ObjectHideFlags: 0
@@ -1274,8 +1289,8 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6604047466868958465}
   serializedVersion: 4
-  m_Mass: 3
-  m_Drag: 1
+  m_Mass: 5
+  m_Drag: 2
   m_AngularDrag: 0
   m_CenterOfMass: {x: 0.17, y: 0.1, z: -0.3}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -1441,8 +1456,8 @@ Transform:
   m_GameObject: {fileID: 7788703555753521999}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
-  m_LocalScale: {x: 10, y: 1, z: 0.25}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
+  m_LocalScale: {x: 10, y: 3, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6227409752963664925}

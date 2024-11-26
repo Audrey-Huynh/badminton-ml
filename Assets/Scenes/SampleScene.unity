@@ -1224,6 +1224,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 21532319986508010, guid: e02546e27cd6eae4180b24b1c187d5d3, type: 3}
+      propertyPath: m_BehaviorType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2587514026332803031, guid: e02546e27cd6eae4180b24b1c187d5d3, type: 3}
       propertyPath: m_Name
       value: TrainingArea
