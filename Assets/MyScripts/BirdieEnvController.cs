@@ -91,16 +91,21 @@ public class BirdieEnvController : MonoBehaviour
                 if (lastHitter == Team.Blue)
                 {
                     // apply penalty to blue agent
+                    blueAgent.AddReward(-0.1f);
+                    purpleAgent.AddReward(0.1f);
                 }
                 else if (lastHitter == Team.Purple)
                 {
                     // apply penalty to purple agent
+                    purpleAgent.AddReward(-0.1f);
+                    blueAgent.AddReward(0.1f);
                 }
 
                 // end episode
+                /*
                 blueAgent.EndEpisode();
                 purpleAgent.EndEpisode();
-                ResetScene();
+                ResetScene();*/
                 break;
 
             case Event.HitBlueGoal:
@@ -110,9 +115,10 @@ public class BirdieEnvController : MonoBehaviour
                 StartCoroutine(GoalScoredSwapGroundMaterial(badmintonSettings.blueGoalMaterial, RenderersList, .5f));
 
                 // end episode
+                /*
                 blueAgent.EndEpisode();
                 purpleAgent.EndEpisode();
-                ResetScene();
+                ResetScene();*/
                 break;
 
             case Event.HitPurpleGoal:
@@ -122,9 +128,10 @@ public class BirdieEnvController : MonoBehaviour
                 StartCoroutine(GoalScoredSwapGroundMaterial(badmintonSettings.purpleGoalMaterial, RenderersList, .5f));
 
                 // end episode
+                /*
                 blueAgent.EndEpisode();
                 purpleAgent.EndEpisode();
-                ResetScene();
+                ResetScene();*/
                 break;
 
             case Event.HitIntoBlueArea:
