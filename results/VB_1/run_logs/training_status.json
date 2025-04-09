@@ -2,58 +2,31 @@
     "Badminton": {
         "checkpoints": [
             {
-                "steps": 499994,
-                "file_path": "results\\VB_1\\Badminton\\Badminton-499994.onnx",
-                "reward": 0.005235602094240838,
-                "creation_time": 1733001454.370397,
+                "steps": 499988,
+                "file_path": "results\\VB_1\\Badminton\\Badminton-499988.onnx",
+                "reward": 0.014792899408284023,
+                "creation_time": 1744160119.789711,
                 "auxillary_file_paths": [
-                    "results\\VB_1\\Badminton\\Badminton-499994.pt"
+                    "results\\VB_1\\Badminton\\Badminton-499988.pt"
                 ]
             },
             {
-                "steps": 968650,
-                "file_path": "results\\VB_1\\Badminton\\Badminton-968650.onnx",
-                "reward": null,
-                "creation_time": 1733003966.345971,
+                "steps": 711506,
+                "file_path": "results\\VB_1\\Badminton\\Badminton-711506.onnx",
+                "reward": 0.013605442176870748,
+                "creation_time": 1744161509.2411397,
                 "auxillary_file_paths": [
-                    "results\\VB_1\\Badminton\\Badminton-968650.pt"
-                ]
-            },
-            {
-                "steps": 3499999,
-                "file_path": "results\\VB_1\\Badminton\\Badminton-3499999.onnx",
-                "reward": 0.0,
-                "creation_time": 1734563530.1668777,
-                "auxillary_file_paths": [
-                    "results\\VB_1\\Badminton\\Badminton-3499999.pt"
-                ]
-            },
-            {
-                "steps": 3999996,
-                "file_path": "results\\VB_1\\Badminton\\Badminton-3999996.onnx",
-                "reward": 0.0113314447592068,
-                "creation_time": 1734565979.1806853,
-                "auxillary_file_paths": [
-                    "results\\VB_1\\Badminton\\Badminton-3999996.pt"
-                ]
-            },
-            {
-                "steps": 4121856,
-                "file_path": "results\\VB_1\\Badminton\\Badminton-4121856.onnx",
-                "reward": 0.010135135135135136,
-                "creation_time": 1734566586.9903083,
-                "auxillary_file_paths": [
-                    "results\\VB_1\\Badminton\\Badminton-4121856.pt"
+                    "results\\VB_1\\Badminton\\Badminton-711506.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 4121856,
+            "steps": 711506,
             "file_path": "results\\VB_1\\Badminton.onnx",
-            "reward": 0.010135135135135136,
-            "creation_time": 1734566586.9903083,
+            "reward": 0.013605442176870748,
+            "creation_time": 1744161509.2411397,
             "auxillary_file_paths": [
-                "results\\VB_1\\Badminton\\Badminton-4121856.pt"
+                "results\\VB_1\\Badminton\\Badminton-711506.pt"
             ]
         }
     },
