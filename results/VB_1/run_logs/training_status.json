@@ -2,24 +2,6 @@
     "Badminton": {
         "checkpoints": [
             {
-                "steps": 711506,
-                "file_path": "results\\VB_1\\Badminton\\Badminton-711506.onnx",
-                "reward": 0.013605442176870748,
-                "creation_time": 1744161509.2411397,
-                "auxillary_file_paths": [
-                    "results\\VB_1\\Badminton\\Badminton-711506.pt"
-                ]
-            },
-            {
-                "steps": 999932,
-                "file_path": "results\\VB_1\\Badminton\\Badminton-999932.onnx",
-                "reward": 0.08333333333333333,
-                "creation_time": 1744245454.2590578,
-                "auxillary_file_paths": [
-                    "results\\VB_1\\Badminton\\Badminton-999932.pt"
-                ]
-            },
-            {
                 "steps": 1499980,
                 "file_path": "results\\VB_1\\Badminton\\Badminton-1499980.onnx",
                 "reward": 0.3780487804878049,
@@ -45,15 +27,33 @@
                 "auxillary_file_paths": [
                     "results\\VB_1\\Badminton\\Badminton-2151232.pt"
                 ]
+            },
+            {
+                "steps": 2499994,
+                "file_path": "results\\VB_1\\Badminton\\Badminton-2499994.onnx",
+                "reward": 1.3164556962025316,
+                "creation_time": 1744257855.6668491,
+                "auxillary_file_paths": [
+                    "results\\VB_1\\Badminton\\Badminton-2499994.pt"
+                ]
+            },
+            {
+                "steps": 2601348,
+                "file_path": "results\\VB_1\\Badminton\\Badminton-2601348.onnx",
+                "reward": 0.9361702127659575,
+                "creation_time": 1744258466.1565912,
+                "auxillary_file_paths": [
+                    "results\\VB_1\\Badminton\\Badminton-2601348.pt"
+                ]
             }
         ],
         "final_checkpoint": {
-            "steps": 2151232,
+            "steps": 2601348,
             "file_path": "results\\VB_1\\Badminton.onnx",
-            "reward": null,
-            "creation_time": 1744252147.5101242,
+            "reward": 0.9361702127659575,
+            "creation_time": 1744258466.1565912,
             "auxillary_file_paths": [
-                "results\\VB_1\\Badminton\\Badminton-2151232.pt"
+                "results\\VB_1\\Badminton\\Badminton-2601348.pt"
             ]
         }
     },
